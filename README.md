@@ -1,4 +1,4 @@
-# API Películas
+# PelisApp
 
 Esta es una aplicación de gestión de películas desarrollada utilizando Spring Boot.
 
