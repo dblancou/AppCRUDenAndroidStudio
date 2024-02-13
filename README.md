@@ -1,6 +1,6 @@
 # PelisApp
 
-Esta es una aplicación de gestión de películas desarrollada utilizando Spring Boot.
+Esta es una aplicación CRUD para gestionar tu lista de películas favoritas desarrollada en Android Studio y que utiliza una API en Spring Boot.
 
 ## Contenido del proyecto
 
