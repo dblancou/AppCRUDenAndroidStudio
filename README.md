@@ -68,7 +68,7 @@ A continuación se muestran pantallazos de cada una de las pantallas de la aplic
 
 La pantalla principal de la aplicación, representada por el fragmento HomeFragment, muestra una lista de películas en la interfaz de usuario. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
 
-    Barra de herramientas: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Watchlist". Esta barra de herramientas proporciona una navegación intuitiva y una identificación clara de la función de la pantalla.
+    Título: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Watchlist". Esta barra de herramientas proporciona una navegación intuitiva y una identificación clara de la función de la pantalla.
 
     Lista de elementos: Justo debajo de la barra de herramientas, se muestra una lista de películas. Cada elemento de la lista contiene información básica sobre una película, como el título, el director y el género, así como una imagen de la película. La lista es desplazable, lo que permite al usuario explorar fácilmente todas las películas disponibles.
 
