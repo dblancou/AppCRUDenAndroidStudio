@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">MProyectoFinalSegundoTrimestre</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="default_web_client_id">172153498095-5rsqsdjbsm1sp43mt4ouksj4e8f8b3af.apps.googleusercontent.com</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

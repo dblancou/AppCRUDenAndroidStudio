@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "172153498095",
+    "project_id": "proyectomultimedia-b681d",
+    "storage_bucket": "proyectomultimedia-b681d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172153498095:android:a873e04290efa76821ee1a",
+        "android_client_info": {
+          "package_name": "com.vedruna.mproyectofinalsegundotrimestre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172153498095-07rok3tr4cbir6ec8iv37qhqcdk4l92i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vedruna.mproyectofinalsegundotrimestre",
+            "certificate_hash": "e3d7cabf1688cb0238a2bd6fdca23d052e29cef8"
+          }
+        },
+        {
+          "client_id": "172153498095-5rsqsdjbsm1sp43mt4ouksj4e8f8b3af.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5RWNUAivXieAz2VRvAqzLYMq-Ha1stgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172153498095-5rsqsdjbsm1sp43mt4ouksj4e8f8b3af.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
