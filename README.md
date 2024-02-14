@@ -80,10 +80,24 @@ Esta pantalla proporciona una experiencia de usuario intuitiva y eficiente para 
 
 2. **Añadir Película**
 
-![Añadir Película](screenshots/create_movie_screen.png)
+![Añadir Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaA%C3%B1adir.JPG?raw=true)
 
-Descripción: Esta pantalla permite al usuario agregar una nueva película proporcionando detalles como título, director, género y URL del póster.
+La pantalla "Añadir Película", representada por el fragmento CrearFragment, permite al usuario ingresar información sobre una nueva película, como el título, director, género y URL del póster. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
 
+    Título: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Añadir Película". Esta barra de herramientas proporciona una identificación clara de la función de la pantalla y ayuda al usuario a comprender el contexto de la acción que se está realizando.
+
+    Campos de entrada de datos: Justo debajo de la barra de herramientas, se muestran varios campos de texto donde el usuario puede ingresar información sobre la película:
+        Título: Permite al usuario ingresar el título de la película.
+        Director: Permite al usuario ingresar el nombre del director de la película.
+        Género: Permite al usuario ingresar el género de la película.
+        URL del Póster: Permite al usuario ingresar la URL del póster de la película.
+
+    Botón para añadir película: Al final de la pantalla, se encuentra un botón "Añadir Película" que el usuario puede tocar una vez que haya ingresado toda la información requerida sobre la película. Al hacer clic en este botón, se enviará una solicitud para crear la nueva película utilizando los datos proporcionados.
+
+    Validación de datos: Antes de permitir que el usuario cree una nueva película, se verifica que todos los campos de entrada de datos estén completos. Si algún campo está vacío, se muestra un mensaje de error indicando al usuario que complete todos los campos antes de continuar.
+
+    Creación de película: Una vez que el usuario ha ingresado todos los detalles de la película y hace clic en el botón "Añadir Película", se envía una solicitud a la API para crear la película con los datos proporcionados. Si la creación es exitosa, se muestra un mensaje de éxito con el título de la película creada. En caso de error durante la creación, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
+    
 3. **Actualizar Película**
 
 ![Actualizar Película](screenshots/update_movie_screen.png)
