@@ -62,6 +62,42 @@ Esta estructura organizativa sigue las mejores prácticas de desarrollo de aplic
 
 A continuación se muestran pantallazos de cada una de las pantallas de la aplicación:
 
+1. **Pantalla Inicio de Sesión (Login)**
+
+![Pantalla Principal](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaLogin.JPG?raw=true)
+
+La pantalla de inicio de sesión es la primera pantalla que los usuarios ven al abrir la aplicación. Permite a los usuarios ingresar sus credenciales para acceder a la aplicación. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
+
+    Logo de la Aplicación:
+        Un ShapeableImageView que muestra el logo de la aplicación.
+        Se coloca en la parte superior de la pantalla.
+
+    Título de la Aplicación:
+        Un TextView que muestra el nombre de la aplicación.
+        Se coloca debajo del logo de la aplicación.
+
+    Campo de Entrada de Nombre de Usuario:
+        Un EditText donde los usuarios pueden ingresar su nombre de usuario.
+        Se coloca debajo del título de la aplicación.
+
+    Campo de Entrada de Contraseña:
+        Un EditText donde los usuarios pueden ingresar su contraseña.
+        Se coloca debajo del campo de entrada de nombre de usuario.
+
+    Botón de Inicio de Sesión:
+        Un Button que permite a los usuarios iniciar sesión.
+        Se coloca en la parte inferior de la pantalla.
+
+    Botón de Inicio de Sesión con Google:
+        Un SignInButton proporcionado por Google que permite a los usuarios iniciar sesión con sus cuentas de Google.
+        Se coloca en el centro de la pantalla.
+
+La pantalla también proporciona funcionalidad para iniciar sesión con Google. Cuando se presiona el botón de inicio de sesión con Google, se inicia el proceso de inicio de sesión con Google utilizando Firebase Authentication.
+
+El código Java asociado con esta pantalla maneja la autenticación de Firebase y el inicio de sesión con Google, así como también la validación de las credenciales ingresadas por el usuario para iniciar sesión en la aplicación.
+
+En resumen, la pantalla de inicio de sesión proporciona a los usuarios una forma fácil de acceder a la aplicación, ya sea utilizando sus credenciales locales o mediante el inicio de sesión con Google.
+
 1. **Pantalla Principal (Home)**
 
 ![Pantalla Principal](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaHome.JPG?raw=true)
