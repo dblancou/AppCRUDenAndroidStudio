@@ -121,9 +121,19 @@ La pantalla "Modificar Película", representada por el fragmento ModificarFragme
 
 4. **Borrar Película**
 
-![Borrar Película](screenshots/delete_movie_screen.png)
+![Borrar Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaBorrar.JPG?raw=true)
 
-Descripción: Esta pantalla permite al usuario eliminar una película proporcionando su ID.
+La pantalla "Borrar Película", representada por el fragmento BorrarFragment, permite al usuario eliminar una película existente proporcionando su ID. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
+
+    Título: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Borrar". Esta barra de herramientas proporciona una identificación clara de la función de la pantalla y ayuda al usuario a comprender el contexto de la acción que se está realizando.
+
+    Campo de entrada de ID de película: Justo debajo de la barra de herramientas, hay un campo de entrada de texto donde el usuario puede ingresar el ID de la película que desea eliminar.
+
+    Botón para borrar película: Debajo del campo de entrada de ID, se encuentra un botón "Borrar Película" que el usuario puede tocar una vez que haya ingresado el ID de la película que desea eliminar. Al hacer clic en este botón, se enviará una solicitud para eliminar la película con el ID proporcionado.
+
+    Verificación de existencia de película: Antes de enviar la solicitud de eliminación, se realiza una verificación para asegurarse de que la película con el ID proporcionado realmente exista en la base de datos. Si la película no existe, se muestra un mensaje indicando al usuario que la película no se puede encontrar.
+
+    Eliminación de película: Si la película existe y se puede encontrar en la base de datos, se envía una solicitud para eliminarla. Si la eliminación es exitosa, se muestra un mensaje de éxito informando al usuario que la película se ha eliminado correctamente. En caso de error durante la eliminación, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
 
 5. **Salir de la Aplicación**
 
