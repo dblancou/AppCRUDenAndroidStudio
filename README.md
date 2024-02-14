@@ -64,13 +64,23 @@ A continuación se muestran pantallazos de cada una de las pantallas de la aplic
 
 1. **Pantalla Principal (Home)**
 
-![Pantalla Principal](screenshots/home_screen.png)
+![Pantalla Principal](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaHome.JPG?raw=true)
 
-Descripción: Esta pantalla muestra una lista de películas.
+La pantalla principal de la aplicación, representada por el fragmento HomeFragment, muestra una lista de películas en la interfaz de usuario. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
 
-2. **Crear Película**
+    Barra de herramientas: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Watchlist". Esta barra de herramientas proporciona una navegación intuitiva y una identificación clara de la función de la pantalla.
 
-![Crear Película](screenshots/create_movie_screen.png)
+    Lista de elementos: Justo debajo de la barra de herramientas, se muestra una lista de películas. Cada elemento de la lista contiene información básica sobre una película, como el título, el director y el género, así como una imagen de la película. La lista es desplazable, lo que permite al usuario explorar fácilmente todas las películas disponibles.
+
+    Funcionalidad de carga de datos: Cuando el fragmento se crea, se realiza una llamada a la API para obtener todas las películas disponibles. Una vez que se reciben los datos, se cargan en la lista utilizando un adaptador personalizado (MovieAdapter). Este adaptador se encarga de inflar las vistas para cada elemento de la lista y asignar los datos correspondientes a partir de la lista de películas obtenida de la API.
+
+    Interacción con la lista: El usuario puede interactuar con la lista tocando cualquier elemento, lo que podría desencadenar acciones adicionales, como ver más detalles de la película o realizar operaciones CRUD sobre ella.
+
+Esta pantalla proporciona una experiencia de usuario intuitiva y eficiente para explorar y gestionar la lista de películas favoritas. La combinación de una barra de herramientas clara, una lista de elementos bien organizada y la funcionalidad de carga de datos en tiempo real garantiza una experiencia fluida y satisfactoria para el usuario.
+
+2. **Añadir Película**
+
+![Añadir Película](screenshots/create_movie_screen.png)
 
 Descripción: Esta pantalla permite al usuario agregar una nueva película proporcionando detalles como título, director, género y URL del póster.
 
