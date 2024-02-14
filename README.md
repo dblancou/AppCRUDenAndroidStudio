@@ -2,7 +2,7 @@
 
 Esta es una aplicación CRUD para gestionar tu lista de películas favoritas desarrollada en Android Studio y que utiliza una API en Spring Boot.
 
-## Contenido del proyecto
+## Características de la Api propia creada para el proyecto
 
 - **Versiones utilizadas:**
   - Java 17
@@ -16,20 +16,47 @@ Esta es una aplicación CRUD para gestionar tu lista de películas favoritas des
   
 ## Configuración del Proyecto
 
-- **Dependencias:**
-  - Spring Boot Starter Data JPA: Para la integración con JPA y la base de datos.
-  - Spring Boot Starter Web: Para el desarrollo de la API REST.
-  - Spring Boot DevTools: Para la mejora de la experiencia de desarrollo.
-  - H2 Database: Base de datos en memoria para desarrollo y pruebas.
-  - Lombok: Para la reducción del código boilerplate.
-  - Spring Boot Starter Test: Para las pruebas unitarias.
+- **Dependencias y Versiones Utilizadas:**
+  - Android Gradle Plugin: 7.0.2
+  - Kotlin: 1.5.31
+  - Compile SDK: 34
+  - Target SDK: 33
+  - Material Components: 1.4.0
+  - Retrofit: 2.9.0
+  - Gson Converter: 2.9.0
+  - Picasso: 2.8
+  - Google Play Services Auth: 20.7.0
+  - Firebase BOM: 32.7.2
+  - Firebase Analytics: 22.6.0
+  - Firebase Auth: 22.3.1
+  - JUnit: 4.13.2
+  - Espresso: 3.5.1
 
 - **Plugin Maven:**
   - Spring Boot Maven Plugin: Permite empaquetar la aplicación como un JAR ejecutable.
 
+
 ## Estructura del Proyecto
 
 El proyecto sigue una estructura de paquetes estándar de Spring Boot, que incluye paquetes para controladores, servicios, modelos y repositorios.
+
+**com.vedruna.mproyectofinalsegundotrimestre.adapter**
+
+Este paquete contiene el adaptador personalizado MovieAdapter, que se utiliza para mostrar una lista de películas en la interfaz de usuario. El adaptador se encarga de inflar las vistas de cada elemento de la lista y asignar los valores correspondientes a partir de los datos proporcionados por la lista de películas. Además, utiliza la biblioteca Picasso para cargar imágenes de manera eficiente en las vistas.
+
+**com.vedruna.mproyectofinalsegundotrimestre.interfaces**
+
+En este paquete se define la interfaz CRUDInterfaces, que especifica las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para las películas. Esta interfaz utiliza anotaciones de Retrofit para definir los endpoints de la API REST que interactúan con el backend de la aplicación.
+
+**com.vedruna.mproyectofinalsegundotrimestre.model**
+
+Aquí se encuentra la clase Movie, que representa un objeto de película en el modelo de datos de la aplicación. Esta clase tiene campos para almacenar información como el ID de la película, el título, el director, el género y la URL de la imagen. También incluye métodos para acceder y modificar estos campos, así como un método toString() para obtener una representación en cadena legible de la película.
+
+**com.vedruna.mproyectofinalsegundotrimestre.utils**
+
+Este paquete contiene la clase Constants, que define constantes utilizadas en toda la aplicación. En particular, incluye la URL base para las solicitudes de la API en diferentes entornos (desarrollo local en casa y en Vedruna). Esto facilita la configuración y el cambio entre diferentes entornos de backend sin tener que modificar manualmente las URL en todo el código.
+
+Esta estructura organizativa sigue las mejores prácticas de desarrollo de aplicaciones Android y facilita la mantenibilidad, escalabilidad y comprensión del código. Cada paquete contiene clases con responsabilidades específicas, lo que facilita la localización de código relacionado y la colaboración entre miembros del equipo de desarrollo.
 
 ## Pantallas de la Aplicación
 
