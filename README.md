@@ -92,13 +92,13 @@ La pantalla de inicio de sesión es la primera pantalla que los usuarios ven al 
         Un SignInButton proporcionado por Google que permite a los usuarios iniciar sesión con sus cuentas de Google.
         Se coloca en el centro de la pantalla.
 
-La pantalla también proporciona funcionalidad para iniciar sesión con Google. Cuando se presiona el botón de inicio de sesión con Google, se inicia el proceso de inicio de sesión con Google utilizando Firebase Authentication.
+La pantalla también proporciona funcionalidad para iniciar sesión con Google. Cuando se presiona el botón de inicio de sesión con Google, se inicia el proceso utilizando Firebase Authentication.
 
 El código Java asociado con esta pantalla maneja la autenticación de Firebase y el inicio de sesión con Google, así como también la validación de las credenciales ingresadas por el usuario para iniciar sesión en la aplicación.
 
 En resumen, la pantalla de inicio de sesión proporciona a los usuarios una forma fácil de acceder a la aplicación, ya sea utilizando sus credenciales locales o mediante el inicio de sesión con Google.
 
-1. **Pantalla Principal (Home)**
+2. **Pantalla Principal (Home)**
 
 ![Pantalla Principal](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaHome.JPG?raw=true)
 
@@ -114,7 +114,7 @@ La pantalla principal de la aplicación, representada por el fragmento HomeFragm
 
 Esta pantalla proporciona una experiencia de usuario intuitiva y eficiente para explorar y gestionar la lista de películas favoritas. La combinación de una barra de herramientas clara, una lista de elementos bien organizada y la funcionalidad de carga de datos en tiempo real garantiza una experiencia fluida y satisfactoria para el usuario.
 
-2. **Añadir Película**
+3. **Añadir Película**
 
 ![Añadir Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaA%C3%B1adir.JPG?raw=true)
 
@@ -134,7 +134,7 @@ La pantalla "Añadir Película", representada por el fragmento CrearFragment, pe
 
     Creación de película: Una vez que el usuario ha ingresado todos los detalles de la película y hace clic en el botón "Añadir Película", se envía una solicitud a la API para crear la película con los datos proporcionados. Si la creación es exitosa, se muestra un mensaje de éxito con el título de la película creada. En caso de error durante la creación, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
     
-3. **Actualizar Película**
+4. **Actualizar Película**
 
 ![Actualizar Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaModificar.JPG?raw=true)
 
@@ -155,7 +155,7 @@ La pantalla "Modificar Película", representada por el fragmento ModificarFragme
 
     Actualización de película: Una vez que el usuario ha ingresado los cambios deseados en la información de la película y hace clic en el botón "Actualizar Película", se envía una solicitud a la API para actualizar la película con los datos modificados. Si la actualización es exitosa, se muestra un mensaje de éxito con el título de la película actualizada. En caso de error durante la actualización, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
 
-4. **Borrar Película**
+5. **Borrar Película**
 
 ![Borrar Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaBorrar.JPG?raw=true)
 
@@ -171,9 +171,21 @@ La pantalla "Borrar Película", representada por el fragmento BorrarFragment, pe
 
     Eliminación de película: Si la película existe y se puede encontrar en la base de datos, se envía una solicitud para eliminarla. Si la eliminación es exitosa, se muestra un mensaje de éxito informando al usuario que la película se ha eliminado correctamente. En caso de error durante la eliminación, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
 
-5. **Salir de la Aplicación**
+6. **Salir de la Aplicación**
 
-![Salir de la Aplicación](screenshots/exit_screen.png)
+![Salir de la Aplicación](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaSalir.JPG?raw=true)
 
-Descripción: Esta pantalla muestra un mensaje de confirmación al usuario antes de salir de la aplicación.
+La pantalla de confirmación de salida se muestra cuando un usuario desea salir de la aplicación. Proporciona un mensaje de confirmación junto con un botón para confirmar la salida. Aquí está la descripción de los elementos en esta pantalla:
+
+    Mensaje de Confirmación:
+        Un TextView que muestra un mensaje preguntando al usuario si está seguro de querer salir de la aplicación.
+        Se coloca en el centro de la pantalla.
+
+    Botón de Confirmación de Salida:
+        Un Button que permite al usuario confirmar la salida de la aplicación.
+        Se coloca debajo del mensaje de confirmación, en el centro de la pantalla.
+
+El fragmento también proporciona funcionalidad para cerrar la sesión del usuario. Cuando se presiona el botón de confirmación de salida, se cierra la sesión tanto en Firebase como en Google (si el usuario inició sesión con Google). Luego, se redirige al usuario a la pantalla de inicio de sesión.
+
+En resumen, la pantalla de confirmación de salida ofrece al usuario una forma de salir de la aplicación de manera segura, asegurándose de que se cierre la sesión correctamente antes de abandonar la aplicación.
 
