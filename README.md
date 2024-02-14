@@ -100,9 +100,24 @@ La pantalla "Añadir Película", representada por el fragmento CrearFragment, pe
     
 3. **Actualizar Película**
 
-![Actualizar Película](screenshots/update_movie_screen.png)
+![Actualizar Película](https://github.com/dblancou/AppCRUDenAndroidStudio/blob/main/images/CapturaModificar.JPG?raw=true)
 
-Descripción: Esta pantalla permite al usuario actualizar los detalles de una película existente.
+La pantalla "Modificar Película", representada por el fragmento ModificarFragment, permite al usuario actualizar la información de una película existente. A continuación se describe la disposición y funcionalidad de los elementos en esta pantalla:
+
+    Título: En la parte superior de la pantalla, se encuentra una barra de herramientas con el título "Actualizar". Esta barra de herramientas proporciona una identificación clara de la función de la pantalla y ayuda al usuario a comprender el contexto de la acción que se está realizando.
+
+    Campos de entrada de datos: Justo debajo de la barra de herramientas, se muestran varios campos de texto donde el usuario puede editar la información existente de la película:
+        ID: Permite al usuario ingresar el ID de la película que desea modificar.
+        Título: Permite al usuario editar el título de la película.
+        Director: Permite al usuario editar el nombre del director de la película.
+        Género: Permite al usuario editar el género de la película.
+        URL del Póster: Permite al usuario editar la URL del póster de la película.
+
+    Botón para actualizar película: Al final de la pantalla, se encuentra un botón "Actualizar Película" que el usuario puede tocar una vez que haya realizado los cambios deseados en la información de la película. Al hacer clic en este botón, se enviará una solicitud para actualizar la película con los datos modificados.
+
+    Validación de datos: Antes de permitir que el usuario actualice la película, se verifica que todos los campos de entrada de datos estén completos. Si algún campo está vacío, se muestra un mensaje de error indicando al usuario que complete todos los campos antes de continuar.
+
+    Actualización de película: Una vez que el usuario ha ingresado los cambios deseados en la información de la película y hace clic en el botón "Actualizar Película", se envía una solicitud a la API para actualizar la película con los datos modificados. Si la actualización es exitosa, se muestra un mensaje de éxito con el título de la película actualizada. En caso de error durante la actualización, se muestra un mensaje de error indicando al usuario que ocurrió un problema y que vuelva a intentarlo más tarde.
 
 4. **Borrar Película**
 
