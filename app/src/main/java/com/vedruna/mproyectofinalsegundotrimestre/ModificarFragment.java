@@ -23,6 +23,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * Fragmento para modificar información de una película.
+ */
 public class ModificarFragment extends Fragment {
 
     EditText nameText;
@@ -75,6 +78,10 @@ public class ModificarFragment extends Fragment {
         return rootView;
     }
 
+    /**
+     * Método para validar los campos de entrada.
+     * @return True si los campos son válidos, False de lo contrario.
+     */
     private boolean validarCampos() {
         String id = idText.getText().toString().trim();
         String titulo = nameText.getText().toString().trim();
@@ -87,6 +94,9 @@ public class ModificarFragment extends Fragment {
                 !TextUtils.isEmpty(urlImagen);
     }
 
+    /**
+     * Método para actualizar la información de la película.
+     */
     private void actualizar() {
         String id = idText.getText().toString().trim();
         String titulo = nameText.getText().toString().trim();
@@ -121,7 +131,11 @@ public class ModificarFragment extends Fragment {
             }
         });
     }
-    // Método para mostrar un Toast
+
+    /**
+     * Método para mostrar un Toast.
+     * @param mensaje El mensaje a mostrar.
+     */
     private void mostrarToast(String mensaje) {
         Toast.makeText(getActivity(), mensaje, Toast.LENGTH_SHORT).show();
     }

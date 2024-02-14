@@ -1,6 +1,5 @@
 package com.vedruna.mproyectofinalsegundotrimestre.adapter;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +14,19 @@ import com.vedruna.mproyectofinalsegundotrimestre.model.Movie;
 
 import java.util.List;
 
+/**
+ * Adaptador personalizado para mostrar una lista de películas.
+ */
 public class MovieAdapter extends BaseAdapter {
     private List<Movie> movieList;
     private Context context;
 
+    /**
+     * Constructor para crear un adaptador de películas.
+     *
+     * @param context   Contexto de la aplicación.
+     * @param movieList Lista de películas a mostrar.
+     */
     public MovieAdapter(Context context, List<Movie> movieList) {
         this.context = context;
         this.movieList = movieList;
@@ -79,6 +87,9 @@ public class MovieAdapter extends BaseAdapter {
         return convertView;
     }
 
+    /**
+     * Clase ViewHolder para almacenar las vistas de cada elemento de la lista.
+     */
     static class ViewHolder {
         TextView idLabel;
         TextView idText;

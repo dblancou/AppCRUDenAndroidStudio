@@ -1,20 +1,32 @@
 package com.vedruna.mproyectofinalsegundotrimestre;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+
+/**
+ * Fragmento utilizado para mostrar una pantalla de confirmación de salida.
+ */
 public class salirFragment extends Fragment {
 
+    /**
+     * Constructor público vacío requerido por el sistema.
+     */
     public salirFragment() {
-        // Constructor público vacío requerido por el sistema
     }
 
+    /**
+     * Método llamado para crear la vista asociada al fragmento.
+     *
+     * @param inflater           El LayoutInflater utilizado para inflar el diseño.
+     * @param container          El ViewGroup al que se añadirá la vista inflada.
+     * @param savedInstanceState La instancia previamente guardada del fragmento.
+     * @return La vista inflada para el fragmento.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

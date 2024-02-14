@@ -1,3 +1,8 @@
+<!--
+Archivo XML de diseño para el fragmento de modificación de una película.
+Muestra campos para ingresar y editar información de la película, como ID, título, director, género y URL del póster.
+-->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,16 +12,15 @@
     android:background="#2F2F2F"
     tools:context=".ModificarFragment" >
 
-    <!-- Logo centrado -->
-
+    <!-- Barra de herramientas con el título "Actualizar" -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="#2F2F2F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -33,6 +37,7 @@
             tools:layout_editor_absoluteY="18dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Contenedor principal con campos para ingresar información de la película -->
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="600dp"
@@ -45,6 +50,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.725">
 
+        <!-- Campo para ingresar el ID de la película -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +60,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <!-- EditText para ingresar el ID -->
+        <!-- EditText para ingresar el ID de la película -->
         <EditText
             android:id="@+id/editTextID"
             android:layout_width="match_parent"
@@ -65,7 +71,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para el Título -->
+        <!-- Campo para ingresar el título de la película -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +81,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <!-- EditText para ingresar el Título -->
+        <!-- EditText para ingresar el título de la película -->
         <EditText
             android:id="@+id/editTextTitulo"
             android:layout_width="match_parent"
@@ -86,7 +92,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para el Director -->
+        <!-- Campo para ingresar el director de la película -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,7 +102,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <!-- EditText para ingresar el Director -->
+        <!-- EditText para ingresar el director de la película -->
         <EditText
             android:id="@+id/editTextDirector"
             android:layout_width="match_parent"
@@ -107,7 +113,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para el Género -->
+        <!-- Campo para ingresar el género de la película -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,7 +124,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <!-- EditText para ingresar el Género -->
+        <!-- EditText para ingresar el género de la película -->
         <EditText
             android:id="@+id/editTextGenero"
             android:layout_width="match_parent"
@@ -129,7 +135,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para la URL del Póster -->
+        <!-- Campo para ingresar la URL del póster de la película -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +146,7 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
 
-        <!-- EditText para ingresar la URL del Póster -->
+        <!-- EditText para ingresar la URL del póster de la película -->
         <EditText
             android:id="@+id/editTextUrlPoster"
             android:layout_width="match_parent"
@@ -151,6 +157,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
+        <!-- Botón para actualizar la información de la película -->
         <Button
             android:id="@+id/buttonActualizarPelicula"
             android:layout_width="wrap_content"

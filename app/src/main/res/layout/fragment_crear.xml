@@ -1,3 +1,8 @@
+    <!--
+    Archivo XML de diseño para el fragmento de creación de películas (CrearFragment).
+    Muestra una barra de herramientas con el título "Añadir Película" y campos para ingresar el título,
+    director, género y URL del póster de una película.
+    -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,16 +12,15 @@
     android:background="#2F2F2F"
     tools:context=".CrearFragment" >
 
-    <!-- Logo centrado -->
-
+    <!-- Barra de herramientas con el título "Añadir Película" -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="#2F2F2F"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -33,6 +37,7 @@
             tools:layout_editor_absoluteY="18dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Contenedor de los elementos para ingresar la información de la película -->
     <LinearLayout
         android:layout_width="355dp"
         android:layout_height="581dp"
@@ -45,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.706">
 
-        <!-- Text View para el Título -->
+        <!-- Text View y EditText para el Título -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,8 +59,6 @@
             android:text="Título:"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
-
-        <!-- EditText para ingresar el Título -->
         <EditText
             android:id="@+id/editTextTitulo"
             android:layout_width="match_parent"
@@ -66,17 +69,16 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para el Director -->
+        <!-- Text View y EditText para el Director -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/poppins_black"
             android:text="Director:"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
-
-        <!-- EditText para ingresar el Director -->
         <EditText
             android:id="@+id/editTextDirector"
             android:layout_width="match_parent"
@@ -87,7 +89,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para el Género -->
+        <!-- Text View y EditText para el Género -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -97,8 +99,6 @@
             android:text="Género:"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
-
-        <!-- EditText para ingresar el Género -->
         <EditText
             android:id="@+id/editTextGenero"
             android:layout_width="match_parent"
@@ -109,7 +109,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
-        <!-- Text View para la URL del Póster -->
+        <!-- Text View y EditText para la URL del Póster -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,8 +119,6 @@
             android:text="Póster (Url):"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
-
-        <!-- EditText para ingresar la URL del Póster -->
         <EditText
             android:id="@+id/editTextUrlPoster"
             android:layout_width="match_parent"
@@ -131,6 +129,7 @@
             android:textColor="#808080"
             android:textColorHint="#808080" />
 
+        <!-- Botón para crear la película -->
         <Button
             android:id="@+id/buttonCrearPelicula"
             android:layout_width="wrap_content"

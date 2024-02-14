@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+    <!--
+    Archivo XML de diseño para el fragmento de eliminación de películas (BorrarFragment).
+    Muestra una barra de herramientas con el título "Borrar" y un campo EditText para ingresar el ID de la película a borrar,
+    junto con un botón para realizar la operación de borrado.
+    -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,13 +12,15 @@
     android:background="#2F2F2F"
     tools:context=".BorrarFragment" >
 
+    <!-- Barra de herramientas con el título "Borrar" -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="4dp"
         android:background="#2F2F2F"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,6 +37,7 @@
             tools:layout_editor_absoluteY="18dp" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Contenedor lineal para el EditText del ID y el botón de borrado -->
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -42,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Agregar un EditText para el ID -->
+        <!-- EditText para ingresar el ID de la película -->
         <EditText
             android:id="@+id/editTextID"
             android:layout_width="match_parent"
@@ -52,6 +59,7 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#808080" />
 
+        <!-- Botón para realizar el borrado -->
         <Button
             android:id="@+id/buttonBorrarProducto"
             android:layout_width="wrap_content"

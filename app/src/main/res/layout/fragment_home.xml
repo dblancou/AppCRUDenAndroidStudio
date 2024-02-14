@@ -1,10 +1,15 @@
+   <!--
+   Archivo XML de diseño para el fragmento de la página de inicio (HomeFragment).
+   Muestra una barra de herramientas con el título "Watchlist" y una lista de elementos.
+   -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#2F2F2F"
-    tools:context=".HomeFragment">
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="#2F2F2F"
+   tools:context=".HomeFragment">
 
+   <!-- Barra de herramientas con el título "Watchlist" -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
@@ -24,6 +29,7 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Lista de elementos -->
     <ListView
         android:id="@+id/lista"
         android:layout_width="match_parent"

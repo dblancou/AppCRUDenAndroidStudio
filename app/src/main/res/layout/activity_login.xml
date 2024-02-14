@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+    <!--
+    Archivo XML de diseño para la pantalla de inicio de sesión.
+    Contiene un ConstraintLayout que organiza los elementos de la interfaz de usuario, incluyendo un logo, un título, campos de entrada de texto para nombre de usuario y contraseña, y un botón para iniciar sesión.
+    -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +9,7 @@
     android:layout_height="match_parent"
     android:background="#2F2F2F ">
 
+    <!-- Logo de la aplicación -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageLogo"
         android:layout_width="150dp"
@@ -19,6 +23,7 @@
         app:layout_constraintVertical_bias="0.644"
         app:shapeAppearanceOverlay="@style/RoundedCorners" />
 
+    <!-- Título de la aplicación -->
     <TextView
         android:id="@+id/Login"
         android:layout_width="0dp"
@@ -38,6 +43,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.403" />
 
+    <!-- Botón de inicio de sesión -->
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -54,6 +60,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.88" />
 
+    <!-- Contenedor para los campos de entrada de texto -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,6 +71,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.657">
 
+        <!-- Campo de entrada de texto para el nombre de usuario -->
         <EditText
             android:id="@+id/inputUser"
             android:layout_width="wrap_content"
@@ -76,6 +84,7 @@
             android:textColor="#FFFFFF"
             android:textColorHint="#5B5B5B" />
 
+        <!-- Campo de entrada de texto para la contraseña -->
         <EditText
             android:id="@+id/inputPassword"
             android:layout_width="wrap_content"

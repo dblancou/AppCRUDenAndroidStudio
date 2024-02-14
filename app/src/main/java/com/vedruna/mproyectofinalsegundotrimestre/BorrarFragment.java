@@ -21,20 +21,16 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ * Fragmento para la funcionalidad de borrado de películas.
+ */
 public class BorrarFragment extends Fragment {
 
     CRUDInterfaces crudInterfaces;
     Button button;
     EditText idEditText;
 
-    public BorrarFragment() {
-
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public BorrarFragment() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,6 +46,10 @@ public class BorrarFragment extends Fragment {
         return view;
     }
 
+    /**
+     * Configura el botón de borrado para manejar los clics.
+     * @param view La vista del fragmento.
+     */
     private void setupDeleteButton(View view) {
         button = view.findViewById(R.id.buttonBorrarProducto);
 
@@ -72,6 +72,10 @@ public class BorrarFragment extends Fragment {
         });
     }
 
+    /**
+     * Verifica la existencia de una película y la elimina si existe.
+     * @param movieId El ID de la película a verificar y eliminar.
+     */
     private void checkAndDelete(final int movieId) {
         // Construir la instancia de Retrofit
         Retrofit retrofit = new Retrofit.Builder()
@@ -105,6 +109,10 @@ public class BorrarFragment extends Fragment {
         });
     }
 
+    /**
+     * Elimina una película de la base de datos utilizando su ID.
+     * @param movieId El ID de la película a eliminar.
+     */
     private void delete(int movieId) {
         // Llamar al método de borrado con el ID de la película
         Call<Void> call = crudInterfaces.delete(movieId);
@@ -130,6 +138,10 @@ public class BorrarFragment extends Fragment {
         });
     }
 
+    /**
+     * Muestra un mensaje Toast en la actividad actual.
+     * @param mensaje El mensaje que se mostrará en el Toast.
+     */
     private void mostrarToast(String mensaje) {
         Toast.makeText(getActivity(), mensaje, Toast.LENGTH_SHORT).show();
     }

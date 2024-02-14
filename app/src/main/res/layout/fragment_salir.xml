@@ -1,3 +1,7 @@
+<!--
+Archivo XML de diseño para el fragmento de confirmación de salida.
+Muestra un mensaje de texto y un botón para confirmar la salida.
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -5,6 +9,7 @@
     android:background="#2F2F2F"
     tools:context=".salirFragment">
 
+    <!-- Mensaje de texto que pregunta al usuario si está seguro de querer salir -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -15,6 +20,7 @@
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
 
+    <!-- Botón para confirmar la salida -->
     <Button
         android:id="@+id/botonSalir"
         android:layout_width="wrap_content"
